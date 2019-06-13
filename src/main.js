@@ -1,10 +1,15 @@
 import Vue from "vue";
-import App from "./App.vue";
-import store from "./store";
+import App from "comps/App";
+
+import storePlugin from "store/storePlugin.js";
 
 Vue.config.productionTip = false;
 
+Vue.use(storePlugin);
+
 new Vue({
-  store,
-  render: h => h(App)
+  render: h => h(App),
+  created() {
+    this.$store.dispatch("initialize", "user");
+  }
 }).$mount("#app");
