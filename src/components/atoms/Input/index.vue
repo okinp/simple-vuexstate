@@ -28,31 +28,39 @@ export default {
 
 <style lang="scss" scoped>
 @import "~scss/variables";
+@import "~scss/global";
 .input {
   display: flex;
   flex-direction: column;
-  height: 75px;
+  height: 5rem;
+  margin-bottom: 1.5rem;
   > input {
-    height: 54px;
+    height: 100%;
     width: 100%;
-    padding: 15px;
-    font-size: 19px;
-    border-radius: 10px;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.4rem;
     border-color: $battleship-gray-opacity;
+    border-width: 0.1rem;
     border-style: solid;
   }
   > span {
-    font-size: 0.8rem;
-    margin-top: 5px;
-    color: $red-error;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 500;
+    margin-top: 0.3rem;
+    color: $battleship-gray-opacity;
     display: none;
-    margin-left: 10px;
+    margin-left: 0.4rem;
   }
 }
 
 .has-error {
-  > input {
+  > input:not(:focus) {
     border-color: $red-error-opacity;
+  }
+  > input:not(:focus) + span {
+    color: $red-error-opacity;
   }
   span {
     display: initial;

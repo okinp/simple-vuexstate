@@ -11,29 +11,32 @@ export default {
 
 <style lang="scss" scoped>
 @import "~scss/variables";
+@import "~scss/global";
 button {
   cursor: pointer;
   background-color: $blue;
   color: white;
-  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1;
   font-weight: bold;
-  height: 54px;
-  padding: 5px 40px;
+  height: 5rem;
+  padding: 1.6rem 1.5rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.4rem;
   &:hover {
-    background-color: darken($blue, 8%);
+    background-color: darken($blue, 4%);
   }
 
   &[disabled] {
-    background-color: $disabled-gray;
+    background-color: rgba($blue, 0.6);
   }
   &[round] {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
     padding: 0;
-    font-size: 26px;
+    font-size: 1.6rem;
+    line-height: 1;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,400");
-@import 'variables';
+@import "variables";
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+html {
+  font-size: 62.5%;
+}
 html,
 body,
 #root {
@@ -23,26 +25,36 @@ body,
 
 /* rem size */
 body {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 [disabled] {
   pointer-events: none;
 }
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: bold;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 2.6rem;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
 }
 h3 {
-  font-size: 1.2rem;
+  font-size: 2.1rem;
+}
+h4 {
+  font-size: 1.9rem;
+}
+h5 {
+  font-size: 1.7rem;
 }
 
-input:focus, button:focus,
+input:focus,
+button:focus,
 textarea {
   outline: none !important;
 }

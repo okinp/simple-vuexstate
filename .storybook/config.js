@@ -14,8 +14,9 @@ addDecorator(withInfo);
 
 addParameters({
   options: {
-    name: "Foo",
-    theme: themes.light
+    theme: {
+      brandTitle: "Foo",
+    }
   },
   backgrounds: [
     { name: "twitter", value: "#00aced" },
