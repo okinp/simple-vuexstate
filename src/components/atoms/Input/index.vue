@@ -43,6 +43,9 @@ export default {
     border-color: $battleship-gray-opacity;
     border-width: 0.1rem;
     border-style: solid;
+    &:focus {
+      border-color: $blue;
+    }
   }
   > span {
     font-size: 1.2rem;
