@@ -1,11 +1,22 @@
 <template>
   <button>
-    <slot>Press Me</slot>
+    <slot>{{content}}</slot>
   </button>
 </template>
 <script>
 export default {
-  name: "Button"
+  name: "Button",
+  props: {
+    state: {
+      type: String,
+      default: "Press Me"
+    }
+  },
+  computed: {
+    content() {
+      return this.state;
+    }
+  }
 };
 </script>
 
