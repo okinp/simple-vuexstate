@@ -39,7 +39,7 @@
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
     "storybook-addon-vue-info": "^1.2.1",
-    "validator": "^11.0.0",
+    "validator": "^13.7.0",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
